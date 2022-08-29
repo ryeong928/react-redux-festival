@@ -1,0 +1,20 @@
+{
+  "name": "react-redux-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryeong928/react-redux-festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryeong928/react-redux-festival/issues"
+  },
+  "homepage": "https://github.com/ryeong928/react-redux-festival#readme"
+}
