@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/ryeong928/react-redux-festival/issues"
   },
-  "homepage": "https://github.com/ryeong928/react-redux-festival#readme"
+  "homepage": "https://github.com/ryeong928/react-redux-festival#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "axios": "^0.27.2",
+    "immer": "^9.0.15",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1"
+  }
 }
