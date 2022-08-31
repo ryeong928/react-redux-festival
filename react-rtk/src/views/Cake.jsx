@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch} from 'react-redux'
-import cakeSlice from "../features/cake/cakeSlice";
+import cakeSlice from "../features/cakeSlice";
 
 export default () => {
   const numOfCakes = useSelector(state => state.cake.numOfCakes)

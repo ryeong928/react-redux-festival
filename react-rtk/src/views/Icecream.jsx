@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import icecreamSlice from "../features/icecream/icecreamSlice";
+import icecreamSlice from "../features/icecreamSlice";
 
 export default () => {
   const [value, setValue] = React.useState(1)

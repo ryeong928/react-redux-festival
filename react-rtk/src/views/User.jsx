@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers } from "../features/user/userSlice";
+import { fetchUsers } from "../features/userSlice";
 
 export default () => {
   const user = useSelector(state => state.user)

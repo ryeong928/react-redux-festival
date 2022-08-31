@@ -1,16 +1,20 @@
 import {configureStore} from '@reduxjs/toolkit'
-import {createLogger} from 'redux-logger'
-import cakeSlice from '../features/cake/cakeSlice'
-import icecreamSlice from '../features/icecream/icecreamSlice'
-import userSlice from '../features/user/userSlice'
+import rootReducer from '../features'
+import rootSaga from '../modules'
+// middlewares
+import { createLogger } from 'redux-logger'
+import createSagaMiddleware from 'redux-saga'
+import { persistStore } from 'redux-persist'
+
+
+const sagaMiddleware = createSagaMiddleware()
 
 const store = configureStore({
-  reducer: {
-    cake: cakeSlice.reducer,
-    icecream: icecreamSlice.reducer,
-    user: userSlice.reducer,
-  },
-  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(createLogger())
+  reducer: rootReducer,
+  // middleware: getDefaultMiddleware => getDefaultMiddleware().concat(createLogger())
+  middleware: [sagaMiddleware]
 })
+sagaMiddleware.run(rootSaga)
 
+export const persistor = persistStore(store)
 export default store
