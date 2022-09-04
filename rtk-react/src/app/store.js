@@ -1,11 +1,10 @@
-import {configureStore} from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import rootReducer from '../features'
 import rootSaga from '../modules'
 // middlewares
 import { createLogger } from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
 import { persistStore } from 'redux-persist'
-
 
 const sagaMiddleware = createSagaMiddleware()
 
